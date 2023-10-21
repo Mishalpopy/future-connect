@@ -218,7 +218,7 @@ a.site-btn:focus,
   Solid BG Color
 --------------------*/
 .main-section.solid-color {
-  background-color: #298D5C;
+  background-image: linear-gradient(to right top, #298d5c, #009176, #00948e, #0095a2, #0095b1);
 }
 
 .main-section.solid-color:after {
@@ -653,7 +653,7 @@ a.site-btn:focus,
 
 .right-warp {
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 100%;
   background: #fff;
   right: 0;
@@ -801,4 +801,59 @@ a.site-btn:focus,
 
 #contact-form button.error {
   background: #e20808;
+}
+
+.service_box{
+  margin: 20px 0;
+  padding: 20px 10px;
+  min-height: 235px;
+  text-align: center;
+  border-radius: 5px;
+  background-image: linear-gradient(to right top, #298d5c, #009176, #00948e, #0095a2, #0095b1);
+  transition: all 0.30s ease 0s;
+  display: flex;
+  flex-direction: column;
+}
+.service_box:hover{
+  background:#009593;
+}
+.service_box .service_icon{
+  width:70px;
+  height:70px;
+  margin: 0 auto;
+  font-size:35px;
+  background: #fff;
+  line-height:70px;
+  border-radius:50px;
+  transform: translateY(0);
+  transition: all 0.30s ease 0s;
+}
+.service_box:hover .service_icon{
+  transform: translateY(-100%);
+}
+.service_box .service_icon i{
+  color:#333;
+}
+.service_box h3{
+  position: relative;
+  top:40px;
+  margin:0;
+  color:#fff;
+  font-size:18px;
+  text-transform:uppercase;
+  transform: translateY(0%);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.service_box:hover h3{
+  top:-40px;
+}
+.service_box  p{
+  color:#fff;
+  margin:0;
+  opacity:0;
+  font-size: 15px;
+  transition: all 0.30s linear 0s;
+}
+.service_box:hover p{
+  opacity:1;
 }
